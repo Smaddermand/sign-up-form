@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    
+}
+
+.left {
+    flex: 1;
+    background-image: url(/img/jasmin-egger-PcGNb3QJjXI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(128, 128, 128, 0.3); /* Semi-transparent grey */
+    width: 100%;  /* Full width of the parent element */
+    height: 20%;  /* Full height of the parent element */
+    position: absolute;  /* Position it relative to the parent element */
+    top: 40%;
+    display: flex;  /* To center the logo and heading */
+    flex-direction: row;  
+    align-items: center;  /* Center the logo and heading horizontally */
+    justify-content: center;  /* Center the logo and heading vertically */
+}
+
+.overlay img {
+    width: 100px;  /* Adjust as necessary */
+    height: 100px;  /* Adjust as necessary */
+}
+
+.overlay h1 {
+    color: white;  /* Adjust as necessary */
+    font-family: 'Norse', sans-serif;
+    font-size: 7em;
+    
+}
+
+.right{
+    flex: 2;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.right p{
+    margin-left: 20px;
+    
+}
+
+.top{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.center {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.center h1 {
+    font-family: 'Norse', sans-serif;
+    font-size: 2em;
+    color: #333;  /* darker color */
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+}
+
+.form-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Adds space between input columns */
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Adjusted to account for column spacing */
+}
+
+/* ... remaining CSS as before ... */
+
+
+.form-column label {
+    font-size: 0.9em;
+    color: darkgray;
+    margin-bottom: 5px;
+}
+
+.form-column input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.form-column input:focus {
+    outline: none;
+    border: 1px solid darkgray;
+}
+
+
+
+
+.bottom{
+    flex: 1;
+}
+
+.form-grid {
+    display: flex;
+    
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add this for your button */
+.submit-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #444;
+    padding: 10px 20px;
+}
+
+.cool-egg {
+    font-size: 2em;
+    font-family: 'Norse', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.cool-egg:hover {
+    animation: bounce 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
+

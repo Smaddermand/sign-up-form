@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="../setup-files/reboot.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <main>
+    <div class="left">
+        <div class="overlay">
+            <img src="/img/odin-lined.png" alt="Odin logo">
+            <h1>ODIN</h1>
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. </p>
+            <p>Sign up <i>now</i> to get started. </p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <div class="center">
+            <h1>Let's do this!</h1>
+            <div class="form-wrapper">
+                <form action="/.action-page" method="post" class="form-grid" id="signup-form">
+                    <div class="form-column">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-column">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="lname">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                        <label for="confirmpassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmpassword" id="confirmpassword">
+                    </div>
+                </form>
+                <p id="error-message" style="color:red"></p>
+            </div>
+        </div>
+        
+        <div class="bottom">
+            <button type="submit" class="submit-btn">Create Account</button>
+            <p class="cool-egg">Egg!</p>
+
+        </div>
+    </div>
+    </main>
+</body>
+</html>
